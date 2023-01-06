@@ -22,10 +22,6 @@ tasks.whenTaskAdded {
     if (it.name.startsWith('publish')) it.dependsOn 'preparePublication'
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.8'
-}
-
 apply plugin: 'maven'
 apply plugin: 'cauldron'
 apply plugin: 'maven-publish'
